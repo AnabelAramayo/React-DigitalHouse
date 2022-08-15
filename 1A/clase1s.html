@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+            <html lang="es">
+            <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Creando elementos con React</title>
+            </head>
+            <body>
+            <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+            <!--Descarga el paquete de react-dom que da acceso a la API de react-dom. La unica función que usaremos de aquí será render.-->
+            <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+            
+            <div id="root"> </div>
+            
+            <script type="text/javascript">
+
+            const p_1=React.createElement(
+                "p",{key:1}, "Soy un paragraph"
+            );
+
+            const p_2 = React.createElement(
+                "p", {key:2}, "Soy un paragraph"
+            );
+
+            const div_el=React.createElement(
+                "div", null, [p_1, p_2]
+            );2
+
+            //ejercicio asincronico REACT
+            // const crear = React.createElement;
+            // const titulo = crear("h2", null, "Hola");
+            // const span = crear("span", null, "Mundo");
+            // const parrafo = crear("p", null, ["Hola", " ", span])
+            // const final = crear("div", null, [titulo, parrafo])
+
+
+            //ejercicio sincronico MESITA 9
+            const crear = React.createElement;
+            const uno = crear("h1", null, "Con lo visto hasta ahora");
+            const dos = crear("h2", null, "Replica este HTML");
+            const tres = crear ("h3", null, "Usando");
+            const cuatro = crear("h4", null, "React.js");
+            const cinco = crear("footer", null, "Suerte!");
+
+            const array = crear("div", null, [uno, dos, tres, cuatro, cinco]);
+
+
+            ReactDOM.render(array, document.getElementById("root"));
+        </script>
+    </body>
+</html>
