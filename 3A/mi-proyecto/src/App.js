@@ -1,25 +1,42 @@
-//import logo from './logo.svg';
-import ClassComponent from '../ClassComponent/ClassComponent';
-import FunctionComponent from '../FunctionComponent/FunctionComponent'
+import FunctionComponent from '../src/FunctionComponent/FunctionComponent'
 import './App.css';
-import satisfied from './img/satisfied.png';
-import info_perritos from '../Componentes/db';
-import Perritos from '../Componentes/perrito';
+
+let puppiesData = [
+  {
+      Nombre: 'Firulais',
+      Edad: 11, 
+      Sexo:'Macho', 
+      Raza:'Pastor alemán',
+      Tamanio: 'Grande'
+  },
+  {
+      Nombre:'Maya',
+      Edad:13,
+      Sexo:'Hembra',
+      Raza: 'Pug',
+      Tamanio:'Chico'
+  },
+  {
+      Nombre: 'Pipo',
+      Edad:5,
+      Sexo:'Macho',
+      Raza: 'Schnauzer',
+      Tamanio: 'Mediano'
+  },
+  {
+      Nombre: 'Pacha',
+      Edad: 2,
+      Sexo: 'Hembra',
+      Raza: 'Mestizo',
+      Tamanio: 'Chico'
+  }
+]
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={satisfied}/>
-        <h1>HOLA BEBITO FIU FIU</h1>
-      </header>
-      <ClassComponent titulo='componente de clase'/>
-      <FunctionComponent titulo='componente de funcion'/>
-      <div>
-      {
-        info_perritos.map((perrito, index) => <perrito key={index} perros = {perrito}/> )
-      }
-      </div>
+    <div>
+      <h1>Clientes caninos de Veterinaria</h1>
+      <FunctionComponent data= {puppiesData}/>
     </div>
   );
 }
