@@ -1,0 +1,26 @@
+[
+    {
+        "titulo": "titanic",
+        "anio": 1994,
+        "director": "Juan Perez",
+        "actores": ["Di Caprio", "Kate W."],
+        "genero": "romance",
+        "puntaje":10
+    },
+    {
+        "titulo": "Me before you",
+        "anio": 2013,
+        "director": "Pedro Pascal",
+        "actores": ["Emilia Clark", "Jhonny Deep"],
+        "genero": "romance",
+        "puntaje":8
+    },
+    {
+        "titulo": "Soy leyenda",
+        "anio": 2001,
+        "director": "Harry Prox",
+        "actores": ["Will Smith", "The dog"],
+        "genero": "action",
+        "puntaje":10
+    }
+]
